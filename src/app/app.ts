@@ -1,12 +1,16 @@
-import { Component, signal } from '@angular/core';
+import { Component, signal, viewChild } from '@angular/core';
 import { RouterOutlet } from '@angular/router';
+import {EuclidesEditorComponent} from 'euclides-editor'
 
 @Component({
   selector: 'app-root',
-  imports: [RouterOutlet],
+  imports: [RouterOutlet, EuclidesEditorComponent],
   templateUrl: './app.html',
   styleUrl: './app.css'
 })
 export class App {
+
+  editor = viewChild(EuclidesEditorComponent);
+  
   protected readonly title = signal('euclides-editor-landing');
 }
