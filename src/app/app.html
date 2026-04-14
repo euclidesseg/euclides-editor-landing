@@ -11,13 +11,14 @@
                 <span class="text-xl font-bold tracking-tight text-slate-800">Euclides<span class="text-brand-green">Editor</span></span>
             </div>
             <div class="hidden md:flex space-x-8 font-medium text-slate-600">
-                <a href="#" class="hover:text-brand-green transition">Docs</a>
-                <a href="#" class="hover:text-brand-green transition">Ecosistema</a>
-                <a href="#" class="hover:text-brand-green transition">GitHub</a>
+                <a href="https://www.npmjs.com/package/euclides-editor" 
+                class="hover:text-brand-green transition" target="_blank">Docs</a>
+                <a href="https://github.com/euclidesseg/euclides-editor/tree/main/euclides-editor" 
+                class="hover:text-brand-green transition" target="_blank">GitHub</a>
             </div>
-            <a href="#instalacion" class="bg-brand-green text-white px-5 py-2.5 rounded-full font-semibold hover:bg-opacity-90 transition shadow-lg shadow-green-900/20">
+            <button (click)="scrollToInstall()  " class="bg-brand-green text-white px-5 py-2.5 rounded-full font-semibold hover:bg-opacity-90 transition shadow-lg shadow-green-900/20">
                 Empezar
-            </a>
+            </button>
         </div>
     </nav>
 
@@ -35,8 +36,10 @@
             </p>
             
             <div class="flex flex-col sm:flex-row justify-center items-center space-y-4 sm:space-y-0 sm:space-x-4 mb-20">
-                <button class="w-full sm:w-auto bg-brand-green text-white px-8 py-4 rounded-xl font-bold text-lg hover:scale-105 transition duration-300 shadow-xl shadow-green-900/10">
-                    Instalar ahora
+                <button
+                (click)="scrollToInstall()"
+                class="w-full sm:w-auto bg-brand-green text-white px-8 py-4 rounded-xl font-bold text-lg hover:scale-105 transition duration-300 shadow-xl shadow-green-900/10">
+                Instalar ahora
                 </button>
                 <button class="w-full sm:w-auto bg-white border-2 border-green-100 px-8 py-4 rounded-xl font-bold text-lg hover:border-brand-green hover:text-brand-green transition">
                     Ver Demo Live
@@ -89,15 +92,17 @@
                     <span class="text-slate-500 text-xs font-sans tracking-widest">NPM MANAGER</span>
                 </div>
                 <div class="space-y-3">
-                    <p class="text-slate-500 italic"># Paso 1: El núcleo</p>
-                    <p><span class="text-vibrant-green">npm</span> install @euclides/core</p>
-                    <p class="pt-4 text-slate-500 italic"># Paso 2: Elige tu entorno</p>
-                    <p><span class="text-vibrant-green">npm</span> install @euclides/vue <span class="text-slate-600">--save</span></p>
+                    <p class="text-slate-500 italic"># Paso 1: Instalación</p>
+                    <p><span class="text-vibrant-green">npm</span> install euclides-editor</p>
+                    <p class="pt-4 text-slate-500 italic"># Paso 2: usa el componente</p>
+                    <pre><code>&lt;euclides-editor&gt;&lt;/euclides-editor&gt;</code></pre>
+                    <p class="pt-4 text-slate-500 italic"># Paso 3: Agrega los estilos en tu angular.json</p>
+                    <pre><code>"styles": ["node_modules/euclides-editor/src/lib/styles/euclides-editor.css"]</code></pre>
                 </div>
                 <div class="absolute -right-10 -bottom-10 w-40 h-40 bg-vibrant-green/5 rounded-full blur-3xl"></div>
             </div>
         </div>
-    </section>
+    </section>  
 
     <!-- Footer -->
     <footer class="bg-green-50/50 py-16 px-6 border-t border-green-100">
