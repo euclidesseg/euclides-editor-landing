@@ -1,7 +1,8 @@
 @import "tailwindcss";
- :root {
-     /* Nueva paleta Verde Texturizado */
-     --color-brand-deep-green: #1a3a32;
-     --color-brand-vibrant-green: #a3e635;
-     --color-brand-soft-green: #ecfccb;
- }
+@theme {
+    /* Nueva paleta Verde Texturizado */
+    --color-brand-deep-green: #1a3a32;
+    --color-brand-vibrant-green: #a3e635;
+    --color-brand-soft-green: #ecfccb;
+
+}

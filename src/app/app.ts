@@ -4,7 +4,7 @@ import {EuclidesEditorComponent} from 'euclides-editor'
 
 @Component({
   selector: 'app-root',
-  imports: [RouterOutlet, EuclidesEditorComponent],
+  imports: [EuclidesEditorComponent],
   templateUrl: './app.html',
   styleUrl: './app.css'
 })
@@ -15,10 +15,12 @@ export class App {
   protected readonly title = signal('euclides-editor-landing');
 
 
+  year = new Date().getFullYear();
   scrollToInstall(){
     const el = document.getElementById('instalacion');
     if(el){
       el.scrollIntoView({behavior: 'smooth', block: 'start'});
     }
   }
+  
 }

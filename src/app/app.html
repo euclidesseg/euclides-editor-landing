@@ -5,18 +5,18 @@
     <nav class="sticky top-0 z-50 glass-nav border-b border-green-100">
         <div class="flex items-center justify-between px-6 py-4 max-w-7xl mx-auto">
             <div class="flex items-center space-x-2">
-                <div class="w-8 h-8 bg-brand-green rounded-lg flex items-center justify-center shadow-lg">
-                    <span class="text-vibrant-green font-bold text-xl">E</span>
+                <div class="w-12 h-12 bg-white rounded-lg justify-center shadow-lg">
+                    <img src="assets/images/euclides-rich.webp" alt="" class="w-full h-full">
                 </div>
-                <span class="text-xl font-bold tracking-tight text-slate-800">Euclides<span class="text-brand-green">Editor</span></span>
+                <span class="text-xl font-bold tracking-tight text-slate-800">Euclides<span class="text-brand-bg-brand-deep-green">Editor</span></span>
             </div>
             <div class="hidden md:flex space-x-8 font-medium text-slate-600">
                 <a href="https://www.npmjs.com/package/euclides-editor" 
-                class="hover:text-brand-green transition" target="_blank">Docs</a>
+                class="hover:text-brand-bg-brand-deep-green transition" target="_blank">Docs</a>
                 <a href="https://github.com/euclidesseg/euclides-editor/tree/main/euclides-editor" 
-                class="hover:text-brand-green transition" target="_blank">GitHub</a>
+                class="hover:text-brand-bg-brand-deep-green transition" target="_blank">GitHub</a>
             </div>
-            <button (click)="scrollToInstall()  " class="bg-brand-green text-white px-5 py-2.5 rounded-full font-semibold hover:bg-opacity-90 transition shadow-lg shadow-green-900/20">
+            <button (click)="scrollToInstall()  " class="bg-brand-deep-green text-white px-5 py-2.5 rounded-full font-semibold hover:bg-opacity-90 transition shadow-lg shadow-green-900/20">
                 Empezar
             </button>
         </div>
@@ -24,56 +24,53 @@
 
     <!-- Hero Section -->
     <header class="hero-gradient pt-16 pb-24 px-6 relative overflow-hidden">
-        <div class="max-w-7xl mx-auto text-center relative z-10">
+        <div class="w-full max-w-5xl mx-auto text-center relative z-10">
             <span class="bg-green-100 text-green-800 px-4 py-1.5 rounded-full text-xs font-bold uppercase tracking-widest mb-6 inline-block border border-green-200">
-                🌱 Edición Sostenible y Ligera
+                Edición cómoda y Ligera
             </span>
            <h1 class="text-5xl md:text-7xl font-extrabold mb-6 tracking-tight">
-                Edición de texto <span class="text-brand-green text-transparent bg-clip-text bg-gradient-to-r from-blue-600 to-indigo-600">sin límites.</span>
+                Edición de texto <span class="bg-brand-deep-green bg-clip-text bg-linear-to-r text-transparent from-brand-vibrant-green to-brand-vibrant-green/200">sin límites.</span>
             </h1>
             <p class="text-lg md:text-xl text-slate-600 max-w-2xl mx-auto mb-10 leading-relaxed">
                 Una librería ligera, extensible y elegante para construir experiencias de escritura increíbles en Angular
-            </p>
-            
-            <div class="flex flex-col sm:flex-row justify-center items-center space-y-4 sm:space-y-0 sm:space-x-4 mb-20">
-                <button
-                (click)="scrollToInstall()"
-                class="w-full sm:w-auto bg-brand-green text-white px-8 py-4 rounded-xl font-bold text-lg hover:scale-105 transition duration-300 shadow-xl shadow-green-900/10">
-                Instalar ahora
-                </button>
-                <button class="w-full sm:w-auto bg-white border-2 border-green-100 px-8 py-4 rounded-xl font-bold text-lg hover:border-brand-green hover:text-brand-green transition">
-                    Ver Demo Live
-                </button>
-            </div>
-
-            <!-- Editor Preview -->
+            </p>            
         </div>
-        <euclides-editor></euclides-editor>
+        <div class="max-w-200 mx-auto flex flex-col sm:flex-row justify-center items-center space-y-4 sm:space-y-0 sm:space-x-4 mb-12">
+            <button
+            (click)="scrollToInstall()"
+            class="w-full sm:w-auto bg-brand-deep-green text-white px-8 py-4 rounded-xl font-bold text-lg hover:scale-105 transition duration-300 shadow-xl shadow-green-900/10">
+            Instalar ahora
+            </button>
+        </div>
     </header>
 
+    
+    <section class="demo w-full max-w-5xl mx-auto p-4">
+        <euclides-editor></euclides-editor>
+    </section>
     <!-- Features Section -->
-    <section class="py-24 px-6 bg-brand-green text-white relative">
+    <section class="py-24 px-6 bg-brand-deep-green text-white relative">
         <div class="max-w-7xl mx-auto grid md:grid-cols-3 gap-12 relative z-10">
             <div class="p-8 rounded-3xl bg-white/5 border border-white/10 hover:bg-white/10 transition">
                 <div class="w-12 h-12 bg-vibrant-green flex items-center justify-center rounded-xl mb-6 shadow-lg shadow-vibrant-green/20">
-                    <svg class="w-6 h-6 text-brand-green" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 3v4M3 5h4M6 17v4m-2-2h4m5-16l2.286 6.857L21 12l-5.714 2.143L13 21l-2.286-6.857L5 12l5.714-2.143L13 3z"></path></svg>
+                    <svg class="w-6 h-6 text-brand-bg-brand-deep-green" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 3v4M3 5h4M6 17v4m-2-2h4m5-16l2.286 6.857L21 12l-5.714 2.143L13 21l-2.286-6.857L5 12l5.714-2.143L13 3z"></path></svg>
                 </div>
                 <h4 class="text-xl font-bold mb-3">Estética Orgánica</h4>
-                <p class="text-green-100/70 leading-relaxed text-sm">Interfaces suaves que reducen la fatiga visual durante largas jornadas de escritura.</p>
+                <p class="text-green-100/70 leading-relaxed text-sm">Euclides Editor, cuenta con un diseño simple, agradable y placentero para que tu experiencia de edisión sea más fluida y dinamica</p>
             </div>
             <div class="p-8 rounded-3xl bg-white/5 border border-white/10 hover:bg-white/10 transition">
                 <div class="w-12 h-12 bg-vibrant-green flex items-center justify-center rounded-xl mb-6 shadow-lg shadow-vibrant-green/20">
-                    <svg class="w-6 h-6 text-brand-green" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 6V4m0 2a2 2 0 100 4m0-4a2 2 0 110 4m-6 8a2 2 0 100-4m0 4a2 2 0 110-4m0 4v2m0-6V4m6 6v10m6-2a2 2 0 100-4m0 4a2 2 0 110-4m0 4v2m0-6V4"></path></svg>
+                    <svg class="w-6 h-6 text-brand-bg-brand-deep-green" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 12l2 2 4-4m5.618-4.016A11.955 11.955 0 0112 2.944a11.955 11.955 0 01-8.618 3.04A12.02 12.02 0 003 9c0 5.591 3.824 10.29 9 11.622 5.176-1.332 9-6.03 9-11.622 0-1.042-.133-2.052-.382-3.016z"></path></svg>
                 </div>
-                <h4 class="text-xl font-bold mb-3">Control Total</h4>
-                <p class="text-green-100/70 leading-relaxed text-sm">Personaliza cada comando y estilo con nuestra API intuitiva basada en hooks.</p>
+                <h4 class="text-xl font-bold mb-3">Seguridad</h4>
+                <p class="text-green-100/70 leading-relaxed text-sm">Proteje tu privacidad, actualmente contamos con un 75% de seguridad en la cadena de suministro</p>
             </div>
             <div class="p-8 rounded-3xl bg-white/5 border border-white/10 hover:bg-white/10 transition">
                 <div class="w-12 h-12 bg-vibrant-green flex items-center justify-center rounded-xl mb-6 shadow-lg shadow-vibrant-green/20">
-                    <svg class="w-6 h-6 text-brand-green" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 12l2 2 4-4m5.618-4.016A11.955 11.955 0 0112 2.944a11.955 11.955 0 01-8.618 3.04A12.02 12.02 0 003 9c0 5.591 3.824 10.29 9 11.622 5.176-1.332 9-6.03 9-11.622 0-1.042-.133-2.052-.382-3.016z"></path></svg>
+                    <svg class="w-6 h-6 text-brand-bg-brand-deep-green" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 12h6m-6 4h6m2 5H7a2 2 0 01-2-2V5a2 2 0 012-2h5.586a1 1 0 01.707.293l5.414 5.414a1 1 0 01.293.707V19a2 2 0 01-2 2z"></path></svg>
                 </div>
-                <h4 class="text-xl font-bold mb-3">Seguridad Nativa</h4>
-                <p class="text-green-100/70 leading-relaxed text-sm">Sanitización automática de HTML para proteger tus aplicaciones de ataques XSS.</p>
+                <h4 class="text-xl font-bold mb-3">Guardado Sencillo</h4>
+                <p class="text-green-100/70 leading-relaxed text-sm">Obtén fácilmente los nodos del editor para manipular contenido y guarda tu trabajo de manera simple y rápida.</p>
             </div>
         </div>
     </section>
@@ -81,7 +78,7 @@
     <!-- Installation con tonalidad verde -->
     <section id="instalacion" class="py-24 px-6 bg-white">
         <div class="max-w-4xl mx-auto">
-            <h3 class="text-3xl font-bold mb-8 text-center text-slate-800">Cultiva tu proyecto</h3>
+            <h3 class="text-3xl font-bold mb-8 text-start text-brand-deep-green p-2 rounded-lg block">Usalo en tu proyecto</h3>
             <div class="bg-slate-900 rounded-2xl p-6 md:p-10 text-green-400 font-mono text-sm md:text-base relative border border-green-900/30 overflow-hidden shadow-2xl">
                 <div class="flex justify-between items-center mb-6">
                     <div class="flex space-x-2">
@@ -108,28 +105,27 @@
     <footer class="bg-green-50/50 py-16 px-6 border-t border-green-100">
         <div class="max-w-7xl mx-auto flex flex-col md:flex-row justify-between items-center space-y-8 md:space-y-0 text-slate-500 text-sm">
             <div class="flex items-center space-x-3">
-                <div class="w-10 h-10 bg-brand-green rounded-xl flex items-center justify-center shadow-md">
-                    <span class="text-vibrant-green font-bold text-xl">E</span>
+                <div class="w-24 h-24 bg-white rounded-xl flex items-center justify-center shadow-md">
+                    <img src="assets/images/euclides-rich.webp" alt="">
                 </div>
-                <div>
-                    <p class="font-bold text-slate-900 text-base">Euclides Editor</p>
-                    <p class="text-xs">Build with nature in mind.</p>
-                </div>
+               
             </div>
             <div class="flex space-x-12">
                 <div class="space-y-2">
                     <p class="font-bold text-slate-900">Producto</p>
-                    <p class="hover:text-brand-green cursor-pointer">Documentación</p>
-                    <p class="hover:text-brand-green cursor-pointer">Seguridad</p>
+                    <p class="hover:text-brand-deep-green cursor-pointer">
+                        <a href="https://www.npmjs.com/package/euclides-editor" target="_blank">Documentación</a>
+                    </p>
                 </div>
                 <div class="space-y-2">
                     <p class="font-bold text-slate-900">Comunidad</p>
-                    <p class="hover:text-brand-green cursor-pointer">GitHub</p>
-                    <p class="hover:text-brand-green cursor-pointer">Discord</p>
+                     <p class="hover:text-brand-deep-green cursor-pointer">
+                        <a href="https://www.npmjs.com/package/euclides-editor" target="_blank">NPM</a>
+                    </p>
                 </div>
             </div>
         </div>
-        <div class="max-w-7xl mx-auto mt-16 pt-8 border-t border-green-100 text-center text-xs text-slate-400">
-            &copy; 2024 Euclides Library. Un proyecto de código abierto.
+        <div class="max-w-7xl mx-auto mt-16 pt-8 border-t border-brand-vibrant-green text-center text-xs text-brand-deep-green">
+            {{year}} Euclides Editor. Un proyecto hecho con pasión.
         </div>
     </footer>
